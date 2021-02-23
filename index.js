@@ -24,3 +24,19 @@ console.log(age);
 // Float 3.141592
 const PI = 3.14;
 console.log(PI);
+
+// Array
+const monday = "Mon";
+const tuesday = "Tue";
+const wednesday = "Wed";
+const thursday = "Thu";
+const friday = "Fri";
+const saturday = "Sat";
+const sunday = "Sun";
+console.log(monday, tuesday, wednesday, thursday, friday, saturday, sunday);
+
+const something = "dog";
+const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", 123, true, "miho", something];
+console.log(daysOfWeek);
+console.log(daysOfWeek[2]);
+// console.log(daysOfWeek[100]); undefined 
