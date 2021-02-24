@@ -40,3 +40,24 @@ const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", 123, true, 
 console.log(daysOfWeek);
 console.log(daysOfWeek[2]);
 // console.log(daysOfWeek[100]); undefined 
+
+// Object
+const identity = ["JB", 33, "Male", "developer"];
+console.log(identity);
+console.log(identity[0]);
+
+const info = {
+	name:"JB",
+	age:33,
+	gender:"Male",
+	job:"Developer"
+	hobby:["camping", "food", "movie", "music"]
+	favorite: [{lover:"SY", pet:"miho"}]
+}
+console.log(info);
+
+console.log(info.job);
+info.job = "Backend Developer";
+console.log(info.job);
+
+// info = true; Assignment to constant variable
