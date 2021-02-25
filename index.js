@@ -61,3 +61,46 @@ info.job = "Backend Developer";
 console.log(info.job);
 
 // info = true; Assignment to constant variable
+
+// Function
+console.log(console);
+
+console.log('Hello');
+console.log('Hello');
+console.log('Hello');
+console.log('Hello');
+
+console.log('Hello JB');
+console.log('Hello SY');
+console.log('Hello Miho');
+console.log('Hello Tami');
+
+console.log('Greeting JB');
+console.log('Greeting SY');
+console.log('Greeting Miho');
+console.log('Greeting Tami');
+
+function sayHello() {
+	console.log('Hello');
+}
+
+sayHello();
+console.log('Hi');
+
+function greeting(name) {
+	console.log('Greeting', name);
+}
+
+greeting('JB');
+greeting('SY');
+greeting('Miho');
+greeting('Tami');
+
+function sayHobby(name, hobby) {
+	console.log('Hello', name, ' you like ', hobby);
+}
+
+sayHobby('JB', 'camping');
+sayHobby('SY', 'exercise');
+sayHobby('Miho', 'walk');
+sayHobby('Tami', 'eat');
