@@ -97,10 +97,22 @@ greeting('Miho');
 greeting('Tami');
 
 function sayHobby(name, hobby) {
-	console.log('Hello', name, ' you like ', hobby);
+	// console.log('Hello ' + name + ' you like ' + hobby);
+	// console.log('Hello', name, ' you like ', hobby);
+	console.log(`Hello ${name} you like ${hobby}`);
 }
 
 sayHobby('JB', 'camping');
 sayHobby('SY', 'exercise');
 sayHobby('Miho', 'walk');
 sayHobby('Tami', 'eat');
+
+// Return
+function returnHobby(name, number) {
+	return `Hello ${name} you like ${hobby}`;
+}
+
+const greetJB = returnHobby('JB', 'camping');
+const greetSY = returnHobby('SY', 'exercise');
+const greetMiho = returnHobby('Miho', 'walk');
+const greetTami = returnHobby('Tami', 'eat');
