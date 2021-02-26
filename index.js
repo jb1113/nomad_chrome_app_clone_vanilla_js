@@ -116,3 +116,34 @@ const greetJB = returnHobby('JB', 'camping');
 const greetSY = returnHobby('SY', 'exercise');
 const greetMiho = returnHobby('Miho', 'walk');
 const greetTami = returnHobby('Tami', 'eat');
+
+// Calculator
+const calculator = {
+	add: function(left, right) {
+		return left + right;
+	},
+	sub: function(left, right) {
+		return left - right;
+	}, 
+	mul: function(left, right) {
+		return left * right;
+	},
+	div: function(left, right) {
+		return left / right;
+	},
+	pow: function(left, right) {
+		return left ** right;
+	}
+}
+
+const plus = calculator.add(10, 5);
+const minus = calculator.sub(10, 5);
+const multiply = calculator.mul(10, 5);
+const divide = calculator.div(10, 5);
+const power = calculator.pow(10, 5);
+
+console.log(plus);
+console.log(minus);
+console.log(multiply);
+console.log(divide);
+console.log(power);
