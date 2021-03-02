@@ -155,4 +155,15 @@ const title = document.getElementById("title");
 console.log(title);
 console.error("Error");
 
+// DOM Function
 title.innerHTML = "Hello! from JS!";;
+
+// Modifying the DOM with JS
+console.dir(title);
+title.style.color = "tomato";
+
+console.dir(document);
+document.title = "clone chrome app Momentum";
+
+// QuerySelector
+const query_title = document.querySelector("#title");
