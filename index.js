@@ -50,8 +50,8 @@ const info = {
 	name:"JB",
 	age:33,
 	gender:"Male",
-	job:"Developer"
-	hobby:["camping", "food", "movie", "music"]
+	job:"Developer",
+	hobby:["camping", "food", "movie", "music"],
 	favorite: [{lover:"SY", pet:"miho"}]
 }
 console.log(info);
@@ -108,7 +108,7 @@ sayHobby('Miho', 'walk');
 sayHobby('Tami', 'eat');
 
 // Return
-function returnHobby(name, number) {
+function returnHobby(name, hobby) {
 	return `Hello ${name} you like ${hobby}`;
 }
 
@@ -147,3 +147,12 @@ console.log(minus);
 console.log(multiply);
 console.log(divide);
 console.log(power);
+
+// DOM
+console.log(document);
+
+const title = document.getElementById("title");
+console.log(title);
+console.error("Error");
+
+title.innerHTML = "Hello! from JS!";;
