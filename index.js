@@ -167,3 +167,26 @@ document.title = "clone chrome app Momentum";
 
 // QuerySelector
 const query_title = document.querySelector("#title");
+
+// Event and Event Listeners
+console.log(window);
+
+function handleResize() {
+	console.log("I have been resized");
+}
+
+/*
+function handleResize(event) {
+	console.log(event);
+}
+*/
+
+window.addEventListener("resize", handleResize);
+// window.addEventListener("resize", handleResize(event));
+
+// Event Handlers
+function handleClick() {
+	title.style.color = "white";
+}
+
+title.addEventListener("click", handleClick);
