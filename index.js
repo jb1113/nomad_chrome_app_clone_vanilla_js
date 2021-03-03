@@ -190,3 +190,84 @@ function handleClick() {
 }
 
 title.addEventListener("click", handleClick);
+
+// If, Else
+if (10 > 5) {
+	console.log("if");
+} else {
+	console.log("else");
+}
+
+if ("10" === 10) {
+	console.log("if");
+} else {
+	console.log("else");
+}
+
+if ("JB" === "SY") {
+	console.log("if");
+} else {
+	console.log("else");
+}
+
+// Else If
+if ("10" === 10) {
+	console.log("if");
+} else if ("10" === "10") {
+	console.log("else if");
+} else {
+	console.log("else");
+}
+
+if ("JB" === "SY") {
+	console.log("if");
+} else if ("JB" === "JB") {
+	console.log("else if");
+} else {
+	console.log("else");
+}
+
+// And
+if (10 > 5 && "JB" === "JB") {
+	console.log("if");
+} else {
+	console.log("else");
+}
+
+if (10 > 5 && "10" === 10) {
+	console.log("if");
+} else {
+	console.log("else");
+}
+
+// Or
+if (10 > 10 || "10" === "10") {
+	console.log("if");
+} else {
+	console.log("else");
+}
+
+if (10 > 10 || "10" === 10) {
+	console.log("if");
+} else {
+	console.log("else");
+}
+
+// Prompt
+// prompt("Ask something from user");
+const drinking = prompt("How old are you?");
+console.log(drinking);
+
+if (drinking > 18) {
+	console.log("you can drink");
+} else {
+	console.log("you can't");
+}
+
+if (drinking >= 18 && drinking <= 21) {
+	console.log("you can drink but you should not");
+} else if (drinking > 21) {
+	console.log("go ahead");
+} else {
+	console.log("too young");
+}
