@@ -271,3 +271,37 @@ if (drinking >= 18 && drinking <= 21) {
 } else {
 	console.log("too young");
 }
+
+// DOM if else Function practice
+const heading = document.querySelector("#heading");
+
+const BASE_COLOR = "white";
+const OTHER_COLOR = "rgb(52, 73, 94)";
+
+function handlerClick() {
+	const currentColor = heading.style.color;
+
+	if (currentColor === BASE_COLOR) {
+		heading.style.color = OTHER_COLOR;
+	} else {
+		heading.style.color = BASE_COLOR;
+	}
+}
+
+function init() {
+	heading.style.color = BASE_COLOR;
+	heading.addEventListener("click", handlerClick);
+}
+init();
+
+// MDN javascript DOM event example
+function handleOffline() {
+	alert("Bye Bye");
+}
+
+function handleOnline() {
+	aler("Welcome back");
+}
+
+window.addEventListener("offline", handleOffline);
+window.addEventListener("online", handleOnline);
