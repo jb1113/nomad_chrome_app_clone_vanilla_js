@@ -300,7 +300,7 @@ function handleOffline() {
 }
 
 function handleOnline() {
-	aler("Welcome back");
+	alert("Welcome back");
 }
 
 window.addEventListener("offline", handleOffline);
