@@ -273,6 +273,7 @@ if (drinking >= 18 && drinking <= 21) {
 }
 
 // DOM if else Function practice
+/* implemented later
 const heading = document.querySelector("#heading");
 
 const BASE_COLOR = "white";
@@ -293,6 +294,7 @@ function init() {
 	heading.addEventListener("click", handlerClick);
 }
 init();
+*/
 
 // MDN javascript DOM event example
 function handleOffline() {
@@ -305,3 +307,36 @@ function handleOnline() {
 
 window.addEventListener("offline", handleOffline);
 window.addEventListener("online", handleOnline);
+
+// Separated HTML, CSS, JavaScript, className, classList
+const heading = document.querySelector("#heading");
+
+const CLICKED_CLASS = "clicked";
+
+function handlerClick() {
+	// Use classList.toggle() function;
+	heading.classList.toggle(CLICKED_CLASS);
+}
+
+/*
+function handlerClick() {
+	// const currentClass = heading.className;
+	const hasClass = heading.classList.contains(CLICKED_CLASS);
+
+	// if (currentClass !== CLICKED_CLASS) {
+	if (hasClass) {
+		// heading.className = CLICKED_CLASS;
+		// heading.classList.add(CLICKED_CLASS);
+		heading.classList.remove(CLICKED_CLASS);
+	} else {
+		// heading.className = "";
+		// heading.classList.remove(CLICKED_CLASS);
+		heading.classList.add(CLICKED_CLASS);
+	}
+}
+*/
+
+function init() {
+	heading.addEventListener("click", handlerClick);
+}
+init();
