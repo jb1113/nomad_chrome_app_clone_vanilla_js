@@ -1,0 +1,20 @@
+body {
+	background-color: #ecf0f1;
+}
+
+h1 {
+	color: rgb(52, 73, 94);
+	transition: color 0.5s ease-in-out;
+}
+
+.btn {
+	cursor: pointer;
+}
+
+.clicked {
+	color: rgb(52, 73, 94);
+}
+
+#title {
+	
+}

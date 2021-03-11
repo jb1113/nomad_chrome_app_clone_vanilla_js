@@ -340,12 +340,3 @@ function init() {
 	heading.addEventListener("click", handlerClick);
 }
 init();
-
-const date = new Date();
-date.getDay(); // 1 Mon 2 Tue 3 Wed 4 Thu 5 Fri 6 Sat 7 Sun
-date.getDate(); // Days
-date.getYear(); // 121 Deprecated
-date.getFullYear(); // 2021 This use!!!
-date.getHours() // Hours
-date.getMinutes(); // Minutes
-date.getSeconds(); // Seconds
