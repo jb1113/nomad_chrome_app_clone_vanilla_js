@@ -18,3 +18,12 @@ h1 {
 #title {
 	
 }
+
+.form, 
+.greeting {
+	display: none;
+}
+
+.showing {
+	display: block;
+}
