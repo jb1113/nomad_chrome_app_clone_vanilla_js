@@ -1,25 +1,13 @@
 body {
 	background-color: #ecf0f1;
+	color: black;
 }
 
-body {
+h4 {
 	color: rgb(52, 73, 94);
 }
 
-.btn {
-	cursor: pointer;
-}
-
-.clicked {
-	color: rgb(52, 73, 94);
-}
-
-#title {
-	
-}
-
-.form, 
-.greeting {
+.form, .greeting {
 	display: none;
 }
 
