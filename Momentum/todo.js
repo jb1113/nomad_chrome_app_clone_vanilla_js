@@ -4,17 +4,32 @@ toDoList = document.querySelector(".js-toDoList");
 
 const LS_TODOS = "toDos";
 
+const toDos = [];
+
+function saveToDos() {
+	localStorage.setItem(LS_TODOS, JSON.stringify(toDos));
+}
 
 function paintToDo(text) {
 	const li = document.createElement("li");
 	const delBtn = document.createElement("button");
-	delBtn.innerText = "❌";
 	const span = document.createElement("span");
+	const newId = toDos.lenght + 1;
+
+	delBtn.innerText = "❌";
 	span.innerText = text;
+
 	li.appendChild(span);
 	li.appendChild(delBtn);
+	li.id = newId;
 	toDoList.appendChild(li);
-	
+
+	const toDoObj = {
+		text: text,
+		id: newId;
+	}
+	toDos.push(toDoObj);
+	saveToDos();
 }
 
 function handleSubmit(event) {
@@ -24,11 +39,20 @@ function handleSubmit(event) {
 	toDoInput.value = "";
 }
 
+/*
+function externalFunction(toDo) {
+	paintToDo(toDo.text);
+}
+*/
 function loadToDos() {
-	const toDos = localStorage.getItem(LS_TODOS);
+	const loadedToDos = localStorage.getItem(LS_TODOS);
 
-	if (toDos === null) {
-		
+	if (loadedToDos !== null) {
+		const parsedToDos = JSON.parse(loadedToDos);
+		parsedToDos.forEach(function(toDo) {
+			paintToDo(toDo.text);
+		});
+		// parsedToDos.forEach(externalFunction);
 	}
 }
 
