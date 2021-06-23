@@ -34,7 +34,7 @@ function loadCoords() {
 	if (loadedCoords === null) {
 		askForCoords();
 	} else {
-		
+		// getWeather() API Call
 	}
 }
 
